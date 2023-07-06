@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\paas-sisttransfermep-combcra-misc.props" />
+</Project>
