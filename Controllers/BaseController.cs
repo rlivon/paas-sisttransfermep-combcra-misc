@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Configuration;
 
 namespace paas_sisttransfermep_combcra_misc.Controllers
 {
@@ -11,6 +12,7 @@ namespace paas_sisttransfermep_combcra_misc.Controllers
         public BaseController(IMemoryCache cache)
         {
             this.cache = cache;
+
         }
 
         protected Entidades.Sesion Sesion
@@ -28,23 +30,27 @@ namespace paas_sisttransfermep_combcra_misc.Controllers
                    .SetBasePath(Directory.GetCurrentDirectory())
                    .AddJsonFile("appSettings.json", true, true);
 
-                IConfigurationRoot configurationRoot = builder.Build();
-
-                string servernameDBEnv = configurationRoot.GetConnectionString("servernameDBEnv"); //@"172.23.160.1\MSQL2019";
-                string instancenameDBEnv = configurationRoot.GetConnectionString("instancenameDBEnv");
-                string nameDBEnv = configurationRoot.GetConnectionString("nameDBEnv");
-                string usuarioDBEnv = configurationRoot.GetConnectionString("usuarioDBEnv");
-                string passwordDBEnv = CedEncriptador.EncryptDecrypt.DecryptCore(configurationRoot.GetConnectionString("passwordDBEnv"), configurationRoot.GetConnectionString("semilla"));
+                sesion.Ambiente = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+                string servernameDBEnv = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT_SERVER");
+                string instancenameDBEnv = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT_INST");
+                string nameDBEnv = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT_BD");
+                string usuarioDBEnv = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT_USU");
+                string passwordDBEnv = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT_PASS");
+                //string passwordDBEnv = CedEncriptador.EncryptDecrypt.DecryptCore(configurationRoot.GetConnectionString("passwordDBEnv"), configurationRoot.GetConnectionString("semilla"));
                 string llave = "";
 
                 try
                 {
-                    llave = configurationRoot.GetConnectionString("llave");
-                }
+                    llave = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT_LL");
+                        }
                 catch (Exception)
                 {
                 }
 
+                System.Console.WriteLine(servernameDBEnv);
+                System.Console.WriteLine(instancenameDBEnv);
+                System.Console.WriteLine(nameDBEnv);
+                System.Console.WriteLine(usuarioDBEnv);
                 System.Console.WriteLine("Lee Llave: " + llave);
 
                 //CON USUARIO SQL Y PS ENCRIPADA

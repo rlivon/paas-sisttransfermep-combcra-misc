@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valholl\\Documentos\\Docker\\CedST-Servicio-Varios-NetCore6-VS2022\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj": {}
+    "C:\\Users\\Raul Livon\\Documents\\GitHub\\Docker\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valholl\\Documentos\\Docker\\CedST-Servicio-Varios-NetCore6-VS2022\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj": {
+    "C:\\Users\\Raul Livon\\Documents\\GitHub\\Docker\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valholl\\Documentos\\Docker\\CedST-Servicio-Varios-NetCore6-VS2022\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj",
+        "projectUniqueName": "C:\\Users\\Raul Livon\\Documents\\GitHub\\Docker\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj",
         "projectName": "paas-sisttransfermep-combcra-misc",
-        "projectPath": "C:\\Users\\valholl\\Documentos\\Docker\\CedST-Servicio-Varios-NetCore6-VS2022\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj",
-        "packagesPath": "C:\\Users\\valholl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valholl\\Documentos\\Docker\\CedST-Servicio-Varios-NetCore6-VS2022\\paas-sisttransfermep-combcra-misc\\obj\\",
+        "projectPath": "C:\\Users\\Raul Livon\\Documents\\GitHub\\Docker\\paas-sisttransfermep-combcra-misc\\paas-sisttransfermep-combcra-misc.csproj",
+        "packagesPath": "C:\\Users\\Raul Livon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Raul Livon\\Documents\\GitHub\\Docker\\paas-sisttransfermep-combcra-misc\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\valholl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Raul Livon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

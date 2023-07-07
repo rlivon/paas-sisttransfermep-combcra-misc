@@ -27,7 +27,15 @@
       //"publishAllPorts": true,
       "useSSL": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_ENVIRONMENT_SERVER": "192.168.1.200",
+        "ASPNETCORE_ENVIRONMENT_INST": "",
+        "ASPNETCORE_ENVIRONMENT_BD": "CedSTGalicia",
+        "ASPNETCORE_ENVIRONMENT_USU": "sa",
+        "ASPNETCORE_ENVIRONMENT_PASS": "Ibg0220",
+        "ASPNETCORE_ENVIRONMENT_SEM": "Arre",
+        "ASPNETCORE_ENVIRONMENT_LL": "c"
+
       }
     }
   },
